@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_bar_view"
+        layout="@layout/activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar_view"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_10">
+
+
+            <LinearLayout
+                style="@style/WidthFill"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/my_investment_txt"
+                        android:text="@string/transferSumAmt" />
+
+                    <TextView
+                        android:id="@+id/tvTransferAmt"
+                        style="@style/my_investment"
+                        android:text="@string/blank" />
+
+                </RelativeLayout>
+
+                <View style="@style/line_horizontal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/my_investment_txt"
+                        android:text="@string/remain_principal" />
+
+                    <TextView
+                        android:id="@+id/tvCorpus"
+                        style="@style/my_investment"
+                        android:text="@string/blank" />
+
+                </RelativeLayout>
+
+                <View style="@style/line_horizontal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/my_investment_txt"
+                        android:text="@string/remain_interest" />
+
+                    <TextView
+                        android:id="@+id/tvInterest"
+                        style="@style/my_investment"
+                        android:text="@string/blank" />
+
+                </RelativeLayout>
+
+                <View style="@style/line_horizontal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/my_investment_txt"
+                        android:text="@string/remain_bill" />
+
+                    <TextView
+                        android:id="@+id/tvPeriodSum"
+                        style="@style/my_investment"
+                        android:text="@string/blank" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/WidthFill"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/my_investment_txt"
+                        android:text="@string/pub_title" />
+
+                    <EditText
+                        android:id="@+id/edtTitle"
+                        style="@style/my_investment"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/transfer_title"
+                        android:maxLines="20"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+                <View style="@style/line_horizontal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/my_investment_txt"
+                        android:text="@string/transfer_period" />
+
+                    <ImageView
+                        android:id="@+id/rela1"
+                        android:layout_width="@dimen/dp_15"
+                        android:layout_height="@dimen/dp_15"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:src="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/tvPeriod"
+                        style="@style/my_investment"
+                        android:layout_alignParentRight="false"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:layout_toLeftOf="@id/rela1"
+                        android:gravity="right"
+                        android:hint="@string/select" />
+
+                </RelativeLayout>
+
+                <View style="@style/line_horizontal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/my_investment_txt"
+                        android:text="@string/transferBase" />
+
+                    <EditText
+                        android:id="@+id/edtPrice"
+                        style="@style/my_investment"
+                        android:background="@null"
+                        android:digits="0123456789"
+                        android:gravity="right"
+                        android:hint="@string/transfer_base_price"
+                        android:maxLength="10"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        style="@style/my_investment_txt"
+                        android:text="@string/transferBase" />
+
+                    <EditText
+                        style="@style/my_investment"
+                        android:background="@null"
+                        android:digits="0123456789"
+                        android:gravity="right"
+                        android:hint="@string/transfer_base_price"
+                        android:maxLength="10"
+                        android:singleLine="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/merchandise_detail_page_view"
+                style="@style/WidthFill"
+                android:layout_marginTop="@dimen/dp_10"
+                android:scrollbars="none"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btnPub"-->
+    <!--style="@style/bottom_btn"-->
+    <!--android:layout_margin="@dimen/dp_15"-->
+    <!--android:text="@string/apply" />-->
+</RelativeLayout>

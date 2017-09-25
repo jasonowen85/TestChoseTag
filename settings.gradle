@@ -1,0 +1,2 @@
+include ':app', ':mupdf_libs'
+project(':mupdf_libs').projectDir = new File('mupdf/mupdf_libs')

@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--<item name="android:windowTranslucentStatus">true</item>-->
+    <style name="noTitleBar" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+
+    <style name="WidthFill">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- 我的投资的文字文本样式 -->
+    <style name="my_investment_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_color_gray</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+
+    <!-- 我的投资的数据文本样式 -->
+    <style name="my_investment">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_color_back</item>
+        <item name="android:textColorHint">@color/text_color_light</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <!-- 水平线-->
+    <style name="line_horizontal" parent="match_parent">
+        <item name="android:layout_height">@dimen/dp_0.5</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <!-- 通用按钮 -->
+    <style name="normal_btn" parent="match_parent">
+        <item name="android:layout_height">@dimen/dp_45</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <!-- 通用按钮 -->
+    <style name="bottom_btn" parent="match_parent">
+        <item name="android:layout_height">@dimen/dp_45</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>
