@@ -167,10 +167,7 @@ public class BaseActivity extends FragmentActivity {
     @Override
     protected void onPause() {
         super.onPause();
-
         L.i(TAG, "onPause is  run");
-
-
     }
 
     @Override
