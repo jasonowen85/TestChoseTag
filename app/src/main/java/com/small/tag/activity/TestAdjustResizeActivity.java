@@ -60,6 +60,7 @@ public class TestAdjustResizeActivity extends BaseActivity {
                     "width=device-width, initial-scale=1'/><style type=text/css>img{max-width: 100%;height:auto;}</style>");
         fitContent.append(content);
         return fitContent.toString();
+
     }
 
 
