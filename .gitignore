@@ -1,8 +1,9 @@
 *.iml
 .gradle
 *.log
+*.bat
 /local.properties
-.idea/
+.idea/**/*
 /.idea/libraries
 .DS_Store
 /build
@@ -10,3 +11,4 @@
 src/main/res/values-w820dp/
 app/src/main/res/values-w820dp/
 mupdf/mupdf_libs/src/main/res/layout/
+.idea/
