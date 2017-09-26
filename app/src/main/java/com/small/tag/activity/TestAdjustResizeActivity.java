@@ -30,7 +30,7 @@ public class TestAdjustResizeActivity extends BaseActivity {
 
     @Override
     protected int getLayoutRes() {
-        isSetStatusBar = false;
+//        isSetStatusBar = false;
         return R.layout.activity_test_adjustresize;
     }
 

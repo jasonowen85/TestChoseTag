@@ -9,10 +9,8 @@
     </style>
 
     <!--<item name="android:windowTranslucentStatus">true</item>-->
-    <style name="noTitleBar" parent="@style/Theme.AppCompat.NoActionBar">
+    <style name="noTitleBar" parent="@style/Theme.AppCompat">
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowTranslucentStatus">true</item>
-
     </style>
 
     <style name="WidthFill">
