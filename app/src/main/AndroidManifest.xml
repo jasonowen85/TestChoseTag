@@ -6,6 +6,7 @@
         android:name="com.small.tag.SimpleGlideModule"
         android:value="GlideModule" />
 
+
     <!-- 在SDCard中创建与删除文件权限 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <!-- 往SDCard写入数据权限 -->
