@@ -1,9 +1,12 @@
 *.iml
 .gradle
-.log
+*.log
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
 .DS_Store
 /build
 /captures
+src/main/res/values-w820dp/
+app/src/main/res/values-w820dp/
+mupdf/mupdf_libs/src/main/res/layout/
